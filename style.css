@@ -1,0 +1,526 @@
+/* Global Styles go here */
+.pf-body {
+  background: white;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* // All pages */
+.pf-page-layer {
+  display: inline-block;
+  width: 50px;
+  margin-left: -10px;
+  background-color: white;
+  transition: all 0.5s ease;
+}
+
+.pf-page-layer:first-child {
+  margin-left: 0;
+}
+
+.pf-page-layer:hover {
+  /* // 450px is a calculation using the width of the pf-page-layer (50px) times however many pages there are (9 currently) */
+  width: 750px;
+  transition: all 0.5s ease;
+}
+
+/* Vincent character page styles */
+.pf-vincent-character-page {
+  width: 750px;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  border: 5px solid white;
+  background: white;
+}
+
+.pf-text {
+  font-family: snellroundhand;
+  font-size: 120px;
+  width: 100%;
+}
+
+.pf-text--blue {
+  color: blue;
+}
+
+.pf-text--pink {
+  color: magenta;
+}
+
+.pf-text--yellow {
+  color: yellow;
+}
+
+.pf-text--green {
+  color: lime;
+}
+
+.pf-vincent-container {
+  width: 100px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.pf-text-container {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.pf-title-container {
+  top: 3%;
+  right: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.pf-title-text {
+  font-family: snellroundhand;
+  font-size: 200px;
+  width: 100%;
+}
+
+.pf-vincent-image-row-container {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+}
+
+.pf-vincentbw-image-container {
+  width: 40%;
+  position: relative;
+}
+
+.pf-vincentbw-image-container--right {
+  float: right;
+}
+
+.pf-vincentbw-image-container--left {
+  float: left;
+}
+
+.pf-vincentbw-image-container:hover .pf-vincent--colour {
+  opacity: 0;
+}
+
+.pf-vincentbw-image-container:hover .pf-vincent--bw {
+  opacity: 1;
+}
+
+.pf-vincent {
+  width: 100%;
+  position: relative;
+}
+
+.pf-vincent--bw {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* Mia character page styles */
+
+.pf-mia-character-page {
+  width: 750px;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  border: 5px solid white;
+  background: white;
+}
+
+.pf-mia-image-row-container {
+  padding-top: 35%;
+  padding-left: 3%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.pf-miabw-image-container {
+  width: 8%;
+  position: relative;
+}
+
+.pf-miabw-image-container--right {
+  float: left;
+}
+
+.pf-miabw-image-container--middle {
+  float: left;
+}
+
+.pf-miabw-image-container--left {
+  float: left;
+}
+
+.pf-miabw-image-container:hover .pf-mia--colour {
+  opacity: 0;
+}
+
+.pf-miabw-image-container:hover .pf-mia--bw {
+  opacity: 1;
+}
+
+.pf-mia {
+  width: 100%;
+  position: relative;
+}
+
+.pf-mia--bw {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* Butch character page styles */
+
+.pf-butch-character-page {
+  width: 750px;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  border: 5px solid white;
+  background-color: white;
+}
+
+.pf-butch-image-row-container {
+  padding-left: 2%;
+  padding-top: 32%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.pf-butchbw-image-container {
+  width: 19%;
+  position: relative;
+}
+
+.pf-butchbw-image-container--right {
+  float: left;
+}
+
+.pf-butchbw-image-container--middle {
+  float: left;
+}
+
+.pf-butchbw-image-container--left {
+  float: left;
+}
+
+
+
+.pf-butchbw-image-container:hover .pf-butch--colour {
+  opacity: 0;
+}
+
+.pf-butchbw-image-container:hover .pf-butch--bw {
+  opacity: 1;
+}
+
+.pf-butch {
+  width: 100%;
+  position: relative;
+}
+
+.pf-butch--bw {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* Jules character page styles */
+
+.pf-jules-character-page {
+  width: 750px;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  border: 5px solid white;
+  background: white;
+}
+
+.pf-jules-image-row-container {
+  padding-top: 35%;
+  width: 99.5%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.pf-julesbw-image-container {
+  width: 10%;
+  position: relative;
+}
+
+.pf-julesbw-image-container--right {
+  float: left;
+}
+
+.pf-julesbw-image-container--middle {
+  float: left;
+}
+
+.pf-julesbw-image-container--left {
+  float: left;
+}
+
+.pf-julesbw-image-container:hover .pf-jules--colour {
+  opacity: 0;
+}
+
+.pf-julesbw-image-container:hover .pf-jules--bw {
+  opacity: 1;
+}
+
+.pf-jules {
+  width: 100%;
+  position: relative;
+}
+
+.pf-jules--bw {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* Red Apple page styles */
+
+.pf-red-apple-page {
+  width: 750px;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  border: 5px solid white;
+  background: red;
+  color: red;
+  display: block;
+  cursor: url("./assets/images/redapple5.png"), auto;
+  overflow: scroll;
+}
+
+.pf-apple-text-container {
+  width: 100%;
+  position: relative;
+}
+
+.pf-apple-text {
+  font-family: snellroundhand;
+  font-size: 200px;
+  width: 100%;
+}
+
+.pf-apple-text:hover {
+  color: white;
+}
+
+.pf-text2 {
+  font-family: snellroundhand;
+  font-size: 200px;
+  width: 100%;
+}
+
+.pf-text2:hover {
+  color: white;
+}
+
+.pf-text3 {
+  font-family: snellroundhand;
+  font-size: 200px;
+  width: 100%;
+}
+
+.pf-text3:hover {
+  color: white;
+}
+
+.pf-text4 {
+  font-family: snellroundhand;
+  font-size: 200px;
+  width: 100%;
+}
+
+.pf-text4:hover {
+  color: white;
+}
+
+.pf-text5 {
+  font-family: snellroundhand;
+  font-size: 200px;
+  width: 100%;
+}
+
+.pf-text5:hover {
+  color: white;
+}
+
+.pf-text6 {
+  font-family: snellroundhand;
+  font-size: 200px;
+  width: 100%;
+}
+
+.pf-text6:hover {
+  color: white;
+}
+
+.pf-text7 {
+  font-family: snellroundhand;
+  font-size: 200px;
+  width: 100%;
+}
+
+.pf-text7:hover {
+  color: white;
+}
+
+/* Suitcase page styles */
+
+.pf-suitcase-page {
+  width: 750px;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  border: 5px solid white;
+  background-image: radial-gradient(circle, gold, white);
+}
+
+.pf-suitcasecontainer {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+
+.pf-suitcase {
+  animation: float-suitcase 15s infinite;
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 20%;
+}
+
+@keyframes float-suitcase {
+  0% {
+    top:0;
+    right:0;
+    width: 25%;
+  }
+
+  25% {
+    top:0;
+    right:85%;
+    width: 10%;
+  }
+
+  50% {
+    top:70%;
+    right:70%;
+    width: 15%;
+  }
+
+  75% {
+    top:50%;
+    right:0;
+    width: 20%;
+  }
+
+  100% {
+    top:0;
+    right:0;
+    width: 25%;
+  }
+}
+
+/* Logo page styles */
+
+.pf-logo-page {
+ width: 750px;
+ position: relative;
+ overflow: hidden;
+ height: 100vh;
+ border: 5px solid white;
+ background: black;
+ display: block;
+ min-height: 100vh;
+ cursor: url("./assets/images/pulpfictionlogocursor.png"), auto;
+}
+
+/* Gif page styles */
+
+.pf-gif-page {
+  width: 750px;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  border: 5px solid white;
+  background: white;
+  overflow: scroll;
+  cursor: url("./assets/images/pulpfictionlogocursor.png"), auto;
+}
+
+.pf-gif-container {
+  width: 100%;
+}
+
+.pf-gif2 {
+  padding-top: 15%;
+}
+
+.pf-gif3 {
+  padding-top: 15%;
+}
+
+.pf-gif4 {
+  padding-top: 15%;
+}
+
+.pf-gif5 {
+  padding-top: 15%;
+}
+
+/* Filler Page page styles */
+
+.pf-filler-page {
+ width: 750px;
+ position: relative;
+ overflow: hidden;
+ height: 100vh;
+ border: 5px solid white;
+ background: lime;
+ display: block;
+ min-height: 100vh;
+ cursor: url("./assets/images/julescursor.png"), auto;
+}
+
+.pf-filler2-page {
+  width: 750px;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  border: 5px solid white;
+  background: magenta;
+  display: block;
+  min-height: 100vh;
+  cursor: url("./assets/images/suitcasecursor.png"), auto;
+}
